@@ -3,7 +3,7 @@ go-micro-web-skeleton
 
 Built to handle the packaging of an angular-cli application and serve it up inside a go-micro landscape
 
-Simply fork this repo, build your js artifacts into the js folder and your index.html into the root and `go build`.  The resulting binary will be suitable for serving up these assets behind the micro web executable.
+Simply fork this repo, build your angular app and execute `make`.  The resulting binary (by default `webd`) will be suitable for serving up these assets behind the micro web reverse proxy.
 
 # Skeleton
 
@@ -41,7 +41,7 @@ https://github.com/angular/angular-cli/issues/1080
 so far I've been running the micro web proxy with:
 
 ```
-micro web --namespace my.namespace.web
+micro web --namespace <your.namespace.web>
 ```
 
 building the skeleton's angular app with:
@@ -53,5 +53,5 @@ ng build --base-href "/skeleton/"
 and the skeleton binary with:
 
 ```
-go-micro-web-skeleton --server_name my.namespace.web.skeleton
+go-micro-web-skeleton --server_name <your.namespace.web.skeleton>
 ```
