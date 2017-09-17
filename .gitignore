@@ -8,6 +8,8 @@ site/*.js
 site/*.html
 site/*.map
 site/*.ico
+site/*.css
+site/*.txt
 webd
 
 # dependencies

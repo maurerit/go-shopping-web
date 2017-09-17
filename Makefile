@@ -11,4 +11,4 @@ goserver:
 	CGO_ENABLED=0 go build -o webd .
 
 webclient:
-	ng build --base-href "/skeleton/"
+	ng build -prod --base-href "/skeleton/"
